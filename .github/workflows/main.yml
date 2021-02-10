@@ -1,20 +1,18 @@
 on: 
   push:
-    branches: 
-    - master
-name: Production Deploy
+    branches: master
+name: 🚀 Deploy website on push
 jobs:
-  FTP-Deploy-Acton:
+  web-deploy:
     name: 🎉 Deploy
     runs-on: ubuntu-latest
     steps:
+    - name: 🚚 Get latest code
       uses: actions/checkout@v2.3.2
-      with:
-        fetch-depth: 2
     
-    - name: FTP-Deploy-Acton
+    - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.0.0
       with:
-        ftp-server: ftp://194.56.190.11
-        ftp-username: michaelaccount
-        ftp-password: ${{ secrets.ftp_password }}
+        server: ftp://194.56.190.11
+        username: michaelaccount
+        password: ${{ secrets.ftp_password }}
