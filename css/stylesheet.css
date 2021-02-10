@@ -1,0 +1,213 @@
+html,
+body,
+header,
+#intro {
+    height: 100%;
+    width: 100%;
+    color: #222;
+    font-size: 14px;
+    font-family: 'Roboto Mono', monospace;
+    line-height: 1.80857;
+    margin: auto;
+}
+
+.padding {
+    padding: 2rem;
+}
+
+/*  Navbar */
+.navbar {
+    padding: .8rem;
+}
+
+.navbar li {
+    padding-left: 20px;
+}
+
+.nav-item {
+    text-align: center;
+    font-size: 25px;
+}
+
+.btn-sm {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #f1f1f1;
+    margin: 10px;
+    border-radius: 30%;
+    color: black;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.btn-sm i {
+    line-height: 32px;
+    font-size: 20px;
+    transition: 0.2s linear;
+}
+
+.btn-sm:hover i {
+    transform: scale(1.2);
+    color: #f1f1f1;
+}
+
+.btn-sm::before {
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background: #222222;
+    transform: rotate(45deg);
+    left: -110%;
+    top: 90%;
+}
+
+.btn-sm:hover::before {
+    animation: aaa 0.7s 1;
+    top: -10%;
+    left: -10%;
+}
+
+@keyframes aaa {
+    0% {
+        left: -110%;
+        top: 90%;
+    }
+
+    50% {
+        left: 10%;
+        top: -30%;
+    }
+
+    100% {
+        top: -10%;
+        left: -10%;
+    }
+}
+
+/*  Navbar */
+
+/*  Main-Banner */
+.view {
+    width: 100%;
+    height: 100%;
+    background: url('../img/Michael/Background.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    opacity: 0.95;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.heading {
+    color: white;
+}
+
+.heading h1 {
+    font-weight: 700;
+    font-size: 62px;
+    text-transform: uppercase;
+}
+
+.heading p {
+    font-size: 30px;
+}
+
+.heading h3 {
+    font-size: 35px;
+}
+
+/*  Main-Banner */
+
+/* Button */
+.btn-primary {
+    background-color: #222222;
+    border: 1px solid white;
+}
+
+.btn-primary:hover {
+    transform: scale(1.1);
+    background-color: black;
+}
+
+/* Button */
+
+/* Jumbotron */
+.jumbotron {
+    padding: 1rem;
+    border-radius: 0px;
+}
+
+/* Jumbotron */
+
+/* Footer */
+footer {
+    background-color: #3f3f3f;
+    color: #d5d5d5;
+    padding-top: 2rem;
+}
+
+hr.light {
+    border-top: 1px solid #d5d5d5;
+    width: 75%;
+    margin-top: .8rem;
+    margin-bottom: 1rem;
+}
+
+footer a {
+    color: #d5d5d5;
+}
+
+hr.light-100 {
+    border-top: 1px solid #d5d5d5;
+    width: 100%;
+    margin-top: .8rem;
+    margin-bottom: 1rem;
+}
+
+/* Footer */
+
+
+figure {
+    position: relative;
+    width: 100%;
+    height: 60%;
+    margin: 0 !important;
+}
+
+.fixed-wrap {
+    clip: rect(0, auto, auto, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#fixed {
+    background-image: url('../img/Michael/Travel.jpg');
+    opacity: 0.95;
+    filter: brightness(80%);
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    will-change: transform;
+}
+
+.image {
+    text-align: center;
+}

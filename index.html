@@ -1,71 +1,245 @@
-<html>
+<!doctype html>
+<html lang="en">
 
 <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <title>Startseite</title>
-    <link rel="stylesheet" href="../2-CSS/Webpage-with-style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+
+    <title> Michael Webseite</title>
 
 </head>
 
 <body>
 
-    <h1>Startseite</h1>
+    <!--NAvigation -->
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg sticky-top fixed-top">
+        <!--<div class="container-fluid">-->
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="img/Michael/logo_large.png" width="40" height="40"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-    <h2>Michael Nguyen</h2>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">About me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Blog</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toogle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Travel
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Contact me</a>
+                    </li>
+                </ul>
+                <div class="middle">
+                    <a class="btn-sm" href="#">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="btn-sm" href="#">
+                        <i class="fab fa-twitter"></i>
+                    </a>
 
-    <img src="../img/Michael/Michael%20Nguyen.jpg" width="200">
+                    <a class="btn-sm" href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="btn-sm" href="#">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
 
-    <hr>
-    <h3>Über mich</h3>
 
-    <ul>
-        <li><b>Alter:</b> 71 kg</li>
-        <li><b>Wohnort:</b> Wiedlisbach</li>
-        <li><b>Beruf:</b> Informatiker</li>
-        <li><b>Schule:</b> <a href="https://www.bfh.ch/ti/de/studium/bachelor/medizininformatik/">Medizininformatik - Berner Fachhochschule</a></li>
+        </div>
+    </nav>
+    <!--NAvigation -->
 
-    </ul>
+    <!--Main Banner -->
 
-    <hr>
+    <div id="intro" class="view">
+        <div class="heading">
+            <h1>hello i'm Michael</h1>
+            <p>"The world is a book, and those who do not travel read only a page."</p>
+            <h3 class="cd-headline clip is-full-width">
+                <span>Lorem ipsum dolor sit amet </span>
+                <span class="cd-words-wrapper">
+                    <b class="is-visible">Web Developer</b>
+                    <b>Web Design</b>
+                    <b>Creative Design</b>
+                    <b>Graphic Design</b>
+                </span>
+            </h3>
+        </div>
+    </div>
+    <!--Main Banner -->
 
-    <h3>Werdegang</h3>
+    <!--Jumbotron -->
+    <div class="container-fluid ">
+        <div class="row jumbotron">
+            <div class="col-xs-12 col-sm-12 col-md-9 col-9 col-lg-9 col-xl-10">
+                <p class="lead"> Hallo zusammen </p>
+            </div>
+        </div>
+    </div>
+    <!--Jumbotron -->
 
-    <ol>
-        <li>Primar       schule</li>
-        <li>Oberstuf e</li>
-        <li>InformatikerEFZ</li>
-    </ol>
+    <!--Introduction-->
+    <div class="container-fluid padding">
+        <div class="row justify-content-md-center padding">
+            <div class="col col-lg-4 ">
+                <h2>Michael Nguyen</h2>
+                <p>My name is Michael Nguyen and I'm 21 years old. </p>
+                <p>I live in Switzerland.</p>
+                <p>Currently I'm a IT-Specialist and in September 2020 I will start my study in Medical Informatics.</p>
+                <br>
+                <a href="#" class="btn btn-primary">About me</a>
+            </div>
 
-    <hr>
+            <div class="col col-lg-4 image">
+                <img src="img/Michael/Michael Nguyen.jpg" class="img-fluid">
+            </div>
+        </div>
+    </div>
+    <hr class="my-4">
+    <!--Introduction-->
 
-    <table>
-        <tr>
-            <th>Name</th>
-            <th>Radius</th>
-            <th>Average Temperature</th>
-        </tr>
+    <!-- KeineAhnung -->
+    <div class="container-fluid padding">
+        <div class="row justify-content-md-center padding">
+            <div class="col col-lg-4 image">
+                <img src="img/Michael/Michael Nguyen.jpg" class="img-fluid">
+            </div>
+            
+            <div class="col col-lg-4 ">
+                <h2>Michael Nguyen</h2>
+                <p>My name is Michael Nguyen and I'm 21 years old. </p>
+                <p>I live in Switzerland.</p>
+                <p>Currently I'm a IT-Specialist and in September 2020 I will start my study in Medical Informatics.</p>
+                <br>
+                <a href="#" class="btn btn-primary">About me</a>
+            </div>
 
-        <tr>
-            <td>Mars</td>
-            <td>3,390km</td>
-            <td>-55°C</td>
-        </tr>
+        </div>
+    </div>
+    <!-- -->
 
-        <tr>
-            <td>Venus</td>
-            <td>6,052km</td>
-            <td>460°C</td>
-        </tr>
+    <!-- Fixed Background -->
+    <figure>
+        <div class="fixed-wrap">
+            <div id="fixed">
+            </div>
+        </div>
+    </figure>
+    <!-- Fixed Background -->
 
-    </table>
+    <!--Travel -->
+    <div class="container-fluid padding">
+        <div class="row text-center">
+            <div class="col-12">
+                <h1 class="display-4">Travel</h1>
+                <p>My name is Michael Nguyen and I'm 21 years old. </p>
+                <p>I live in Switzerland.</p>
+                <p>Currently I'm a IT-Specialist and in September 2020 I will start my study in Medical Informatics.</p>
+            </div>
+            <hr>
+        </div>
+    </div>
 
-    <hr>
-    <p>Profile</p>
+    <div class="container-fluid padding">
+        <div class="row padding">
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="img/Michael/Bali.jpg" height="400">
+                    <div class="card-body">
+                        <h4 clasS="card title">Indonesia</h4>
+                        <p class="card-text">sfsfsdfsdf</p>
+                        <a href="#" clas="btn btn-outline-secondary">More about</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="img/Michael/Perth.jpg" height="400">
+                    <div class="card-body">
+                        <h4 clasS="card title">Australia</h4>
+                        <p class="card-text">sfsfsdfsdf</p>
+                        <a href="#" clas="btn btn-outline-secondary">More about</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="img/Michael/Hawaii.jpg" height="400">
+                    <div class="card-body">
+                        <h4 clasS="card title">Hawai'i</h4>
+                        <p class="card-text">sfsfsdfsdf</p>
+                        <a href="#" clas="btn btn-outline-secondary">More about</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Travel -->
 
-    <form action="https://www.xing.com/profile/Michael_Nguyen32/cv">
-        <input type="submit" value="Xing!">
+    <!-- Footer -->
+    <footer>
+        <div class="container-fluid padding">
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <img src="img/Michael/logo_large" width="50" height="50">
+                    <hr class="light">
+                    <p>555-555-5555</p>
+                    <p>michael.nguyen@bla.ch</p>
+                    <p>Strasse Bla bla</p>
+                    <p>Wiedlisbach</p>
+                </div>
+                <div class="col-md-4">
+                    <hr class="light">
+                    <h5> Our Hours</h5>
+                    <hr class="light">
+                    <p> Monday: 9am -10pm</p>
+                    <p> Monday: 9am -10pm</p>
+                </div>
+                <div class="col-md-4">
+                    <hr class="light">
+                    <h5>Contact Me</h5>
+                    <hr class="light">
+                    <p> Monday: 9am -10pm</p>
+                    <p> Monday: 9am -10pm</p>
+                </div>
+                <div class="col-12">
+                    <hr class="light-100">
+                    <h5>&copy; Michael Nguyen Webseite</h5>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-    </form>
+    <!-- Footer -->
+    <!-- Grid https://getbootstrap.com/docs/4.0/layout/grid/ -->
 
 </body></html>
