@@ -1,0 +1,18 @@
+/* Für alle Blöcke*/
+*
+{
+    margin: 0%;
+    padding: 0%;
+    /*Die Eigenschaft box-sizing bestimmt, worauf sich Angaben zu den Abmessungen eines Elementes beziehen.
+    border-box: Angabe gilt für Inhalt, Innenabstand und Rahmen*/
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+section
+{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+
+}

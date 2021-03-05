@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+/*Allgemein*/
+
+    {
+    /* Margin --> Aussenabstand
+    padding --> Innenabstand
+    box-sizing --> box-sizing legt fest, wie die Gesamtbreite und -höhe. border-box weist den Browser an, bei den Werten, die Sie für die Breite und Höhe eines Elements angeben, alle Ränder und Auffüllungen zu berücksichtigen.*/
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    /* Standardschrift*/
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    padding: 100px;
+}
+
+.banner {
+    /*
+    -Mit position:relative kann man das Element mit top, bottom, left und right ausrichten. Die Lücke im Textfluss bleibt bestehen.
+    - Die Eigenschaft min-height bestimmt die minimale Höhe eines Elements.
+    -  background-size bestimmt, an welcher Stelle sich die linken oberen Ecken der Hintergrundbilder befinden sollen.cover: passt unter Beibehaltung des Seitenverhältnisses die kleinere Seite der Grafik in den Anzeigebereich ein
+    - background-position bestimmt, an welcher Stelle sich eine bestimmte Ecke des Hintergrundbildes befinden soll
+    - display wird festgelegt, welche Art von Box ein Element erzeugt. generiert einen Flex-Container, der sich wie ein Blockelement verhält
+    -  justify-content definiert, wie der Platz zwischen Inhaltselementen entlang der Hauptachse eines Flex-Containers bzw. entlang der inline-Achse eines Grid-Containers verteilt wird
+    - align-items legt fest, wie die einzelnen flexiblen Elemente entlang der Querachse angeordnet werden. center Alle Elemente werden mittig angeordnet,
+    */
+    position: relative;
+    min-height: 100vh;
+    background: url(../img/background.jpg);
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* für Titel im banner*/
+
+.banner h2 {
+    /* font-weight bestimmt die zu verwendende „Dicke“ der Schrift.
+    - ne-height bestimmt die zu verwendende Zeilenhöhe.
+    */
+    font-size: 3em;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.3em;
+}
+
+/*im h2 span*/
+
+.banner h2 span {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.banner h3 {
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: 500;
+    line-height: 3.5em;
+}
+
+/*Button*/
+.btn {
+    position: relative;
+    background: #2196f3;
+    display: inline-block;
+    color: #fff;
+    margin-top: 10px;
+    padding: 10px 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+header {
+    /*
+    -  z-index gibt an, in welcher Reihenfolge Elemente auf dem Ausgabemedium dargestellt werden.
+    - justify-conter --> verantwortlich das portfolio und navigation getrennt ist
+    */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*Für javascript navigation bar ausblenden*/
+    transition: 0.5s;
+}
+
+/*Für javascript navigation bar ausblenden beim scrollen*/
+header.sticky
+{
+    background: #fff;
+    padding: 20px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+/* class logo*/
+header .logo
+{
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+/*Für javascript navigation bar ausblenden beim scrollen, damit man diese noch sieht*/
+header.sticky .logo
+{
+    color: #111;
+}
+{
+    background: #fff;
+    padding: 20px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+header ul
+{
+    position: relative;
+    display: flex;
+}
+
+header ul li
+{
+    position: relative;
+    list-style: none;
+}
+
+header ul li a
+{
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/*Für Heading*/
+.heading
+{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #111;
+}
+
+/*Für Heading Überschrift*/
+.heading h2
+{
+    font-weight: 800;
+    font-size: 30px;
+}
+
+/*Für Content wie diese dargestellt werden*/
+.content
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Für ContentBox hier abstand damit es wie ein block aussieht*/
+.contentBx
+{
+    padding-right: 30px;
+}
+
+/*Für Content Überschrift*/
+.contentBx h3
+{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/*Damit es 50% links und 50% rechts*/
+.w50
+{
+    min-width: 50%;
+}
+
+/*Bild im About Me*/
+.imgAbout
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 35%;
+}
